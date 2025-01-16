@@ -18,7 +18,7 @@
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <a href="index.html"><img src="{% static 'images/logo.png' %}" alt="logo" width="125px"></a>
+                    <a href="{% url 'home' %}"><img src="{% static 'images/logo.png' %}" alt="logo" width="125px"></a>
                 </div>
                 <nav>
                     <ul id="MenuItems">
@@ -26,7 +26,7 @@
                         <li><a href="{% url 'products' %}">Products</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Contact</a></li>
-                        <li><a href="account.html">Account</a></li>
+                        <li><a href="{% url 'account' %}">Account</a></li>
                     </ul>
                 </nav>
                 <a href="cart.html"><img src="{% static 'images/cart.png' %}" width="30px" height="30px"></a>
